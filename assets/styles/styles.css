@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:'Quicksand',sans-serif ;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    background-color: #cc252d;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding:1rem 2rem;
+}
+
+header.navbar-container .logo p{
+    padding-left: 1.5rem;
+    color: white;
+    font-weight: 400;
+}
+
+header.navbar-container .logo{
+    display: flex;
+    padding-left: 3rem;
+    align-items: center;
+}
+header.navbar-container .logo img{
+    width: 65px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem ;
+    flex-grow: 1;
+}
+
+.content-image img{
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 2rem;
+}
+.content-description{
+    width: 100%;
+    padding: 0 1rem;
+    text-align: justify;
+}
+
+.content-description p{
+    font-size: 1.5rem;
+}
+
+.content{
+    padding: 0 2rem;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+#btn-logo{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul{
+    font-size: 1rem;
+    display: flex;
+    gap: 1rem 1rem;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius:999px ;
+    transition: all .5 ease-in-out;
+}
+
+nav a:hover{
+    background-color:white;
+    color:#cc252d;
+}
+
+.content-description button{
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand',sans-serif;
+    color: white;
+
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color:#cc252d ;
+    cursor: pointer;
+    transition: all .15s ease-in;
+    text-decoration: none;
+}
+
+.content-description button:hover{
+    border: 3px solid #cc252d ;
+    color: #cc252d;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+footer{
+    padding: 20px;
+    color: white;
+    background-color: #cc252d;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-flow: column nowrap;
+      }     
+      main aside {
+        align-self: center;
+      }
+    .content{
+        flex-direction: column-reverse;
+    }
+    .navbar-container{
+        flex-direction: column;
+    }
+    .nav-list ul{
+        flex-direction: column;
+
+    }
+}
+/* =============== MENU CSS =================*/
+
+.title-menu{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.menu{
+    text-align: center;
+    margin: 0;
+}
+
+.menu img{
+    text-align: center;
+    width: 80%;
+    /* justify-content: center;
+    justify-items: center;
+    display: flex; */
+    margin-right: 1rem;
+    margin: 0;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+
+.menu img:hover{
+    border: 3px solid #cc252d;
+    transition: all .3s ease-in-out;
+}
+
+main{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+
+.content-about {
+    display: flex;
+    align-items: left;
+    margin-bottom: 2rem;
+}
+
+figure img{
+    width: 40%;
+    border-radius: 99px;
+}
+
+.about-me{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 4rem;
+    font-size: 40px;
+}
+
+.biodata img{
+    max-width: 550px;
+    max-height: 250px;
+}
+
+
+.content-about .deskripsi{
+    padding: 0 2rem;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1rem;
+
+
+    flex-wrap: wrap;
+    max-width: 60%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .content-about .deskripsi{
+        max-width: 100%;
+    }
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.biodata{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 9rem;
+    border: 3px solid #cc252d;
+    border-radius: 30px;
+    margin-left:1rem;
+    height: 21rem;
+
+}
+
+
+
+.kontak{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.kontak img{
+    padding: 2rem;
+}
+
+.kontak{
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 99px;
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+    width: 350px;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.kontak:hover{
+    background-color: #cc252d;
+    color: white;
+}
+
+.kontak img{
+    width: 70%;
+}
+
+#btn-kontak:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+#btn-kontak{
+    cursor: pointer;
+    padding: 1rem;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+    font-weight: bold;
+}
